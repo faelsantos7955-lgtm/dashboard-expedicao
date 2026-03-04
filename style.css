@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, [class*="css"], .stApp { font-family: 'DM Sans', sans-serif !important; background-color: #080d1a !important; color: #dde4f0 !important; }
+#MainMenu, footer, header { visibility: hidden; }
+.block-container { padding-top: 0 !important; }
+
+.app-header { background: linear-gradient(135deg,#0b1525,#0f2040 60%,#0b1830); border-bottom:1px solid #1e3560; padding:30px 40px 26px; margin:-4rem -4rem 2.5rem -4rem; display:flex; align-items:center; gap:20px; }
+.app-header-icon { font-size:42px; line-height:1; }
+.app-header h1 { font-size:24px !important; font-weight:700 !important; color:#fff !important; margin:0 !important; letter-spacing:-0.4px; }
+.app-header p { font-size:13px; color:#4a6a90; margin:4px 0 0; }
+
+.section-label { font-size:10.5px; font-weight:700; letter-spacing:1.6px; text-transform:uppercase; color:#2a4a70; margin-bottom:14px; display:flex; align-items:center; gap:12px; }
+.section-label::after { content:''; flex:1; height:1px; background:#111e32; }
+
+.upload-label { font-size:13px; font-weight:600; color:#c8d8f0; margin-bottom:3px; display:flex; align-items:center; gap:8px; }
+.upload-hint { font-size:11px; color:#2a4060; font-family:'DM Mono',monospace; margin-bottom:8px; }
+.badge-r { font-size:9.5px; font-weight:700; padding:2px 8px; border-radius:20px; background:#0f2550; color:#4f8ef7; letter-spacing:0.4px; border:1px solid #1a3a70; }
+.badge-o { font-size:9.5px; font-weight:700; padding:2px 8px; border-radius:20px; background:#0a2010; color:#34d399; letter-spacing:0.4px; border:1px solid #0f3a20; }
+
+[data-testid="stFileUploader"] { background:#090e1c !important; border:1.5px dashed #192a44 !important; border-radius:10px !important; }
+[data-testid="stFileUploader"]:hover { border-color:#2a4a78 !important; }
+[data-testid="stFileUploaderDropzoneInstructions"] p { color:#2a4060 !important; font-size:13px !important; font-family:'DM Sans',sans-serif !important; }
+[data-testid="stFileUploaderDropzoneInstructions"] small { color:#1a3050 !important; font-family:'DM Mono',monospace !important; font-size:11px !important; }
+
+.status-row { background:#090e1c; border:1px solid #111e32; border-radius:10px; padding:14px 20px; margin:18px 0 22px; font-family:'DM Mono',monospace; font-size:12.5px; display:flex; gap:28px; flex-wrap:wrap; align-items:center; }
+.s-ok { color:#34d399; }
+.s-wait { color:#374151; }
+
+.stButton > button { background:linear-gradient(135deg,#1d4ed8,#2563eb) !important; color:#fff !important; font-family:'DM Sans',sans-serif !important; font-weight:700 !important; font-size:15px !important; border:none !important; border-radius:10px !important; padding:14px 32px !important; box-shadow:0 4px 20px rgba(37,99,235,.4) !important; transition:all 0.2s !important; }
+.stButton > button:hover { background:linear-gradient(135deg,#2563eb,#3b82f6) !important; box-shadow:0 6px 28px rgba(37,99,235,.55) !important; transform:translateY(-1px) !important; }
+.stButton > button:disabled { background:#0f1a2e !important; color:#1e3050 !important; box-shadow:none !important; }
+
+[data-testid="stDownloadButton"] > button { background:linear-gradient(135deg,#047857,#059669) !important; color:#fff !important; font-family:'DM Sans',sans-serif !important; font-weight:700 !important; font-size:16px !important; border:none !important; border-radius:12px !important; padding:18px 36px !important; box-shadow:0 4px 24px rgba(5,150,105,.45) !important; transition:all 0.2s !important; }
+[data-testid="stDownloadButton"] > button:hover { background:linear-gradient(135deg,#059669,#10b981) !important; box-shadow:0 6px 32px rgba(5,150,105,.65) !important; transform:translateY(-2px) !important; }
+
+[data-testid="stProgressBar"] > div > div { background:linear-gradient(90deg,#2563eb,#3b82f6) !important; border-radius:8px !important; }
+[data-testid="stProgressBar"] { background:#090e1c !important; border-radius:8px !important; height:8px !important; }
+
+hr { border-color:#111e32 !important; margin:28px 0 !important; }
+[data-testid="stAlert"] { border-radius:10px !important; font-size:14px !important; }
+
+.kpi-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin:20px 0 28px; }
+.kpi-card { background:#090e1c; border:1px solid #111e32; border-radius:12px; padding:20px 16px; text-align:center; }
+.kpi-card.c1 { border-top:3px solid #3b82f6; }
+.kpi-card.c2 { border-top:3px solid #f97316; }
+.kpi-card.c3 { border-top:3px solid #a78bfa; }
+.kpi-card.c4 { border-top:3px solid #34d399; }
+.kpi-card.c5 { border-top:3px solid #f87171; }
+.kpi-lbl { font-size:9.5px; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; color:#2a4060; margin-bottom:10px; }
+.kpi-val { font-size:28px; font-weight:700; color:#fff; line-height:1; margin-bottom:5px; font-family:'DM Mono',monospace; }
+.kpi-sub { font-size:11px; color:#2a4060; font-family:'DM Mono',monospace; }
+
+.reg-table { width:100%; border-collapse:collapse; font-size:13.5px; border-radius:10px; overflow:hidden; border:1px solid #111e32; margin-top:14px; }
+.reg-table thead tr { background:#090f1e; }
+.reg-table th { padding:12px 18px; text-align:left; font-size:10px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:#2a5080; border-bottom:1px solid #111e32; }
+.reg-table td { padding:13px 18px; border-bottom:1px solid #0d1628; color:#9ab0cc; font-family:'DM Mono',monospace; font-size:13px; }
+.reg-table tbody tr:last-child td { border-bottom:none; }
+.reg-table tbody tr:hover { background:#0b1424; }
+.reg-table td:first-child { font-family:'DM Sans',sans-serif; font-weight:600; color:#e2eaf8; font-size:14px; }
+.pill { display:inline-block; padding:3px 12px; border-radius:20px; font-size:12px; font-weight:700; font-family:'DM Mono',monospace; }
+.pill.ok  { background:#041a0c; color:#4ade80; border:1px solid #0e4020; }
+.pill.bad { background:#1a0404; color:#f87171; border:1px solid #4a0e0e; }
